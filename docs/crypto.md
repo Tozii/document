@@ -1,7 +1,11 @@
 # BouncyCastle.Crypto
 > 签名一
-```c#
-
+```
+/// <summary>
+/// 签名
+/// </summary>
+/// <param name="str">需签名的数据</param>
+/// <returns>签名后的值</returns>
 public string Sign(string str)
 {
     //根据需要加签时的哈希算法转化成对应的hash字符节
