@@ -6,4 +6,4 @@
 	* [获取用户列表](user/getuerlist)
 
 * Other
-	* [加密&解密](other)
+	* [	加解密&签名](crypto)
