@@ -1,5 +1,5 @@
-# BouncyCastle.Crypto
-> 签名一
+> 签名一（不清楚是否可以）
+
 ```c#
 /// <summary>
 /// 签名
@@ -10,7 +10,6 @@ public string Sign(string str)
 {
     //根据需要加签时的哈希算法转化成对应的hash字符节
     byte[] bt = Encoding.GetEncoding("utf-8").GetBytes(str);
-    //byte[] bt = Convert.FromBase64String(str);
     var sha256 = new SHA256CryptoServiceProvider();
     byte[] rgbHash = sha256.ComputeHash(bt);
 
@@ -22,7 +21,8 @@ public string Sign(string str)
     return Convert.ToBase64String(inArray);
 }
 ```
-> 签名二
+> 签名二（项目中已使用）
+
 ```c#
 /// <summary>
 /// 签名
@@ -34,13 +34,13 @@ public string Sign(string str)
     CspParameters CspParameters = new CspParameters();
     RSACryptoServiceProvider RSA = new RSACryptoServiceProvider(2048, CspParameters);
     byte[] bytes = Encoding.UTF8.GetBytes(str);
-    //byte[] bytes = Convert.FromBase64String(str);
     RSA.FromXmlString(privateKey);
     byte[] sign = RSA.SignData(bytes, "SHA256");
     return Convert.ToBase64String(sign);
 }
 ```
 > 验签
+
 ```c#
 /// <summary>
 /// 签名验证
