@@ -58,3 +58,11 @@
 删除本地分支：`git branch -d [branchname]`
 
 删除远程仓库分支：`git push  origin :[branchname]`
+
+查看历史：`git log` 退出使用英文 `q`
+
+回退上一个版本：`git reset --hard HEAD^`
+
+查看操作记录：`git reflog`
+
+查看指定文件git使用`cat index.html`windows使用`type index.html`
