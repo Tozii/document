@@ -1,5 +1,7 @@
 # Git基本操作
 
+退出git当前操作：`q`
+
 创建SSH key：`ssh-keygen -t rsa -C "your_email@youremail.com"`
 
 初始化仓库：`git init`
