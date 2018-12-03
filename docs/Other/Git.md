@@ -52,3 +52,5 @@
 创建分支并切换到新分支：`git checkout -b [branchname]` 
 
 创建分支：`git checkout [branchname]`
+
+合并指定分支到当前分支：`git merge [branchname] `
