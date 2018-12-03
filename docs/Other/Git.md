@@ -25,3 +25,17 @@
 提交代码到本地仓库：`git commit -m "更改信息"`
 
 推送到远程仓库：`git push [remotename][branchname]  `例：`git push origin master`
+
+版本差异比较：`git diff head -- [filename]`
+例子：假设仓库里已提交的有五个版本，依次提交的是A、B、C、D、E 。
+执行 `git diff <filename>` 命令，命令行窗口不会输出文件的改动信息。
+
+执行 `git diff HEAD -- <filename>`  命令同样也不会输出文件的改动信息。因为当前工作区未做改动。
+
+执行 `git diff HEAD^ -- <filename>`  命令则可以查看最近两次提交版本的区别（版本E和版本D的差别——增加数字“5”）
+
+执行 `git diff HEAD^^ -- <filename>` 命令则可以查看最近一次提交和最近一次提交的上上个版本的区别（版本E和版本C的差别——增加数字“4”和“5”）
+
+执行 `git diff HEAD^^^ -- <filename>`  命令则可以查看版本E和版本B的差别——增加数字“3”，“4”和“5”。
+
+执行 `git diff HEAD~4 -- <filename>`  命令则可以查看版本E和版本A的差别——增加数字“2”，“3”，“4”和“5”。等同于HEAD^^^^
