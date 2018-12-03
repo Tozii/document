@@ -1,34 +1,27 @@
-# Git»ù±¾²Ù×÷
+# GitåŸºæœ¬æ“ä½œ
 
-´´½¨SSH key£º`ssh-keygen -t rsa -C "your_email@youremail.com"`
+åˆ›å»ºSSH keyï¼š`ssh-keygen -t rsa -C "your_email@youremail.com"`
 
-³õÊ¼»¯²Ö¿â£º`git init`
+åˆå§‹åŒ–ä»“åº“ï¼š`git init`
 
-¿ËÂ¡Ô¶³Ì²Ö¿â´úÂë£º`git clone [address]` Àı£º`git clone git@github.com:Tozii/document.git`
+å…‹éš†è¿œç¨‹ä»“åº“ä»£ç ï¼š`git clone [address]` ä¾‹ï¼š`git clone git@github.com:Tozii/document.git`
 
-²é¿´Ô¶³Ì²Ö¿âĞÅÏ¢ÁĞ±í£º`git remote -v`
+æŸ¥çœ‹è¿œç¨‹ä»“åº“ä¿¡æ¯åˆ—è¡¨ï¼š`git remote -v`
 
-Ìí¼ÓÔ¶³Ì²Ö¿â£º`git remote add [remotename] [address]`Àı£º`git remote add origin git@github.com:Tozii/document.git `
+æ·»åŠ è¿œç¨‹ä»“åº“ï¼š`git remote add [remotename] [address]`ä¾‹ï¼š`git remote add origin git@github.com:Tozii/document.git `
 
-É¾³ıÔ¶³Ì²Ö¿â£º`git remote rm [remotename]`Àı£º`git remote rm origin`
+åˆ é™¤è¿œç¨‹ä»“åº“ï¼š`git remote rm [remotename]`ä¾‹ï¼š`git remote rm origin`
 
-À­È¡Ô¶³Ì²Ö¿â×îĞÂ´úÂë£º`git pull`»ò`git pull [origin] [master]`
+æ‹‰å–è¿œç¨‹ä»“åº“æœ€æ–°ä»£ç ï¼š`git pull`æˆ–`git pull [origin] [master]`
 
-³·ÏúÈ«²¿Î´Ìá½»¸ü¸Ä£º`git checkout .`
+æ’¤é”€å…¨éƒ¨æœªæäº¤æ›´æ”¹ï¼š`git checkout .`
 
-Ìí¼Ó±¾µØËùÓĞ¸ü¸Äµ½Ôİ´æÇø£º`git add -A`
+æ·»åŠ æœ¬åœ°æ‰€æœ‰æ›´æ”¹åˆ°æš‚å­˜åŒºï¼š`git add -A`
 
-Ìí¼Ó³ıÉ¾³ıÍâ¸ü¸Äµ½Ôİ´æÇø£º `git add .`
+æ·»åŠ é™¤åˆ é™¤å¤–æ›´æ”¹åˆ°æš‚å­˜åŒºï¼š `git add .`
 
-Ìí¼ÓÉ¾³ı...ÎÄ¼şµ½Ôİ´æÇø£º`git add -u`
+æ·»åŠ åˆ é™¤...æ–‡ä»¶åˆ°æš‚å­˜åŒºï¼š`git add -u`
 
-Ìá½»´úÂëµ½±¾µØ²Ö¿â£º`git commit -m "¸ü¸ÄĞÅÏ¢"`
+æäº¤ä»£ç åˆ°æœ¬åœ°ä»“åº“ï¼š`git commit -m "æ›´æ”¹ä¿¡æ¯"`
 
-ÍÆËÍµ½Ô¶³Ì²Ö¿â£º`git push [remotename][branchname]  `Àı£º`git push origin master`
-
-
-
-
-
-
-
+æ¨é€åˆ°è¿œç¨‹ä»“åº“ï¼š`git push [remotename][branchname]  `ä¾‹ï¼š`git push origin master`
