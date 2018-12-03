@@ -51,6 +51,10 @@
 
 创建分支并切换到新分支：`git checkout -b [branchname]` 
 
-创建分支：`git checkout [branchname]`
+创建分支：`git branch [branchname]`
 
 合并指定分支到当前分支：`git merge [branchname] `
+
+删除本地分支：`git branch -d [branchname]`
+
+删除远程仓库分支：`git push  origin :[branchname]`
