@@ -66,3 +66,7 @@
 查看操作记录：`git reflog`
 
 查看指定文件git使用`cat index.html`windows使用`type index.html`
+
+更新远程仓库地址：`git remote set-url [remotename] [address]` 例 `git remote set-url origin https://gitee.com/Tozii/Simple.Crypto.git`
+
+修改仓库名：`git remote rename origin oschina`
