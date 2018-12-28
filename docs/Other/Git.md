@@ -57,7 +57,7 @@
 
 删除本地分支：`git branch -d [branchname]`
 
-删除远程仓库分支：`git push  origin :[branchname]`
+删除远程仓库分支：`git push origin :[branchname]`
 
 查看历史：`git log` 退出使用英文 `q`
 
