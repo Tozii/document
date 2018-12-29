@@ -71,4 +71,4 @@
 
 修改仓库名：`git remote rename origin oschina`
 
-关联远程分支：`git push --set-upstream origin master` 这样以后就可以使用`git push` `git pull`，默认推送和拉取`origin`远程仓库de`master`分支 
+关联远程分支：`git push --set-upstream origin master` 这样以后就可以使用`git push` `git pull`，默认推送和拉取`origin`远程仓库的`master`分支 
