@@ -70,3 +70,5 @@
 更新远程仓库地址：`git remote set-url [remotename] [address]` 例 `git remote set-url origin https://gitee.com/Tozii/Simple.Crypto.git`
 
 修改仓库名：`git remote rename origin oschina`
+
+关联远程分支：`git push --set-upstream origin master` 这样以后就可以使用`git push` `git pull`，默认推送和拉取`origin`远程仓库de`master`分支 
