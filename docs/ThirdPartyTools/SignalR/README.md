@@ -3,3 +3,4 @@
 官网：http://signalr.net/
 Demo: https://www.cnblogs.com/zuowj/p/5674615.html
 http://www.cnblogs.com/shenba/p/5416328.html
+https://www.cnblogs.com/xiaoai123/p/6659954.html
