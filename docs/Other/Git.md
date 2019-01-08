@@ -18,6 +18,8 @@
 
 拉取远程分支并合并到本地当前分支上（强制）：`git pull --rebase origin master`
 
+添加忽略配置文件：`touch .gitignore`
+
 撤销全部未提交更改：`git checkout .`
 
 添加本地所有更改到暂存区：`git add -A`
