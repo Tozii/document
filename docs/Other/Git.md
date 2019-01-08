@@ -16,6 +16,8 @@
 
 拉取远程仓库最新代码：`git pull`或`git pull [origin] [master]`
 
+拉取远程分支并合并到本地当前分支上（强制）：`git pull --rebase origin master`
+
 撤销全部未提交更改：`git checkout .`
 
 添加本地所有更改到暂存区：`git add -A`
