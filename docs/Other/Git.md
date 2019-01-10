@@ -18,7 +18,13 @@
 
 拉取远程分支并合并到本地当前分支上（强制）：`git pull --rebase origin master`
 
-添加忽略配置文件：`touch .gitignore`
+添加忽略配置文件(git bash)：`touch .gitignore`
+
+创建文件夹(git bash)：`mkdir filename`
+
+添加忽略配置文件(cmd)：`type nul> .gitignore`
+
+创建文件夹(cmd)：`mkdir filename` 或 `md filename`
 
 撤销全部未提交更改：`git checkout .`
 
