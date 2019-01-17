@@ -11,4 +11,5 @@
   * [Git基本操作](Other/Git)
   * [Nginx](Other/Nginx)
   * [通过IP获取位置](Other/GetAddressByIP)
+  * [gitea](Other/Gitea)
 
