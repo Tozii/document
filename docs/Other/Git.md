@@ -18,6 +18,8 @@
 
 拉取远程分支并合并到本地当前分支上（强制）：`git pull --rebase origin master`
 
+将两个不相干的git库强制合并：`git pull origin master --allow-unrelated-histories`
+
 添加忽略配置文件(git bash)：`touch .gitignore`
 
 创建文件夹(git bash)：`mkdir filename`
