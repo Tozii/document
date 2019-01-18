@@ -75,7 +75,7 @@
 
 查看历史：`git log` 退出使用英文 `q`
 
-回退上一个版本：`git reset --hard HEAD^`
+回退上一个版本(撤销暂存区修改)：`git reset --hard HEAD^`
 
 查看操作记录：`git reflog`
 
