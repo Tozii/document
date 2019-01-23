@@ -12,4 +12,5 @@
   * [Nginx](Other/Nginx)
   * [通过IP获取位置](Other/GetAddressByIP)
   * [Gitea](Other/Gitea)
+  * [Gitea](Other/Diff)
 
