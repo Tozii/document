@@ -9,3 +9,6 @@
 具体操作：
 1. 在安装部署gitea服务端的目中`gitea\data\ssh`文件夹下（根据实际安装目录）下会生成一对密钥，然后拷贝到本地操作电脑的`C:\Users\Tozii\.ssh`文件夹下
 2. 将拷贝下来的公钥添加到gitea账户ssh中
+
+**配置邮件服务：密码参数PASSWD使用授权码，HOST：smtp.qq.com:465**
+
