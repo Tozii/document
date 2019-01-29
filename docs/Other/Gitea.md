@@ -12,3 +12,5 @@
 
 **配置邮件服务：密码参数PASSWD使用授权码，HOST：smtp.qq.com:465**
 
+## win10通知模式激活
+https://blog.csdn.net/fsq0827/article/details/79349739
