@@ -23,3 +23,7 @@ https://zhidao.baidu.com/question/1304591714345278219.html
       <remove name="WebDAVModule" />
     </modules>
 ```
+nuget搭建密钥配置
+
+如果`<add key="requireApiKey" value="true" />` 为true,则必须配置`<add key="apiKey" value="nugetapikey" />`
+上传包时使用apiKey才能上传
