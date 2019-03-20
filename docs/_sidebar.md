@@ -10,6 +10,7 @@
 - Other
   - [FTP连接](Other/FTPconnect)
   - [Git基本操作](Other/Git)
+  - [NuGet基本操作](Other/NuGet)
   - [Nginx](Other/Nginx)
   - [通过IP获取位置](Other/GetAddressByIP)
   - [Gitea](Other/Gitea)
