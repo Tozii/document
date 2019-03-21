@@ -11,9 +11,3 @@
 2. 将拷贝下来的公钥添加到gitea账户ssh中
 
 **配置邮件服务：密码参数PASSWD使用授权码，HOST：smtp.qq.com:465**
-
-## win10通知模式激活
-
-180天激活时间：https://blog.csdn.net/fsq0827/article/details/79349739
-
-永久激活（忘记当时具体使用那个密钥了）：https://blog.csdn.net/qq_15983037/article/details/82459050
