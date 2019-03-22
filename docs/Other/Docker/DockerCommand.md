@@ -19,6 +19,7 @@
 `docker images`
 
 **四、运行容器（运行容器，并且在后台运行，暴露端口80）**
+
 `docker run --name containerName -d -p 80:80 -v {/data/}:{/user/publish/} imageName`
 
 说明：
