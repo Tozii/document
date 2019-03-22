@@ -1,20 +1,23 @@
 # Docker基本操作命令
 
-[来自博客园--平飞](https://www.cnblogs.com/zyrmb/p/10509524.html)
+[来自博客园 — 平飞](https://www.cnblogs.com/zyrmb/p/10509524.html)
 
 **一、拉取镜像**
 `docker pull imageName`
 
 说明：<br/>
 1、imageName：镜像名称
+
 **二、构建镜像（使用Dockerfile构建镜像）**
 `docker build -t imageName`
 
 说明：
 
 1、imageName：镜像名称
+
 **三、查看镜像**
 `docker images`
+
 **四、运行容器（运行容器，并且在后台运行，暴露端口80）**
 `docker run --name containerName -d -p 80:80 -v {/data/}:{/user/publish/} imageName`
 
@@ -29,6 +32,7 @@
 4、-v 目录映射，{主机路径}:{容器路径}
 
 5、imageName：镜像名称
+
 **五、查看容器**
 `docker ps -a  // (列出所有容器，包括未运行的)`
 
@@ -38,6 +42,7 @@
 说明：
 
 1、imageName：镜像名称或者镜像Id
+
 **七、删除所有镜像**
 `docker rmi $(docker images -q)`
 
@@ -47,8 +52,10 @@
 说明：
 
 1、containerName：容器名称
+
 **九、 删除所有容器**
 `docker rm $(docker ps -a -q)`
+
 **十、 查看容器日志**
 `docker logs -f -t --since=“2019-03-04” --tail 10 containerName`
 
@@ -63,10 +70,13 @@
 4、--tail 10 列出容器最新10条日志
 
 5、containerName 容器名称
+
 **十一、 查看容器配置**
 `docker inspect containerName`
+
 **十二、停止容器**
 `docker stop containerName`
+
 **十三、保存镜像**
 `docker save -o name.tar imageName`
 
@@ -75,6 +85,7 @@
 1、name.tar 需要保存的文件名称
 
 2、imageName 镜像名称
+
 **十四、加载本地镜像**
 `docker load -I name.tar`
 
@@ -98,7 +109,9 @@
 1、containerName.tar 需要导入的容器文件名称
 
 2、containnerName 需要导入的容器名称
+
 **十七、启动容器（针对已经停止运行的容器）**
 `docker start containerName`
+
 **十八、重启容器**
 `docker restart containerName`
