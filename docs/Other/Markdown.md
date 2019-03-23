@@ -1,6 +1,6 @@
 # MarkDown基本语法
 
-参考：[MarkDown基本语法](https://www.jianshu.com/p/191d1e21f7ed)
+参考：[MarkDown基本语法 — 高鸿祥](https://www.jianshu.com/p/191d1e21f7ed)
 
 **首行缩进**
 ```
