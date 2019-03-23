@@ -3,15 +3,16 @@
 ![Polly](https://tozii.github.io/Asset/document/images/polly.png)
 
 **Github**
-> [Github:https://github.com/App-vNext/Polly](https://github.com/App-vNext/Polly)
+> [Github：https://github.com/App-vNext/Polly](https://github.com/App-vNext/Polly)
 
 **介绍**
-*&emsp;&emsp;Polly是一个被.NET基金会认可的弹性和瞬态故障处理库，允许我们以非常顺畅和线程安全的方式来执诸如行重试，断路，超时，故障恢复等策略，其主要功能如下：
-功能1：重试（Retry）
-功能2：断路器（Circuit-Breaker）
-功能3：超时检测（Timeout）
-功能4：缓存（Cache）
-功能5：降级（Fallback）
+
+*&emsp;&emsp;Polly是一个被.NET基金会认可的弹性和瞬态故障处理库，允许我们以非常顺畅和线程安全的方式来执诸如行重试，断路，超时，故障恢复等策略，其主要功能如下：<br/>
+功能1：重试（Retry）<br/>
+功能2：断路器（Circuit-Breaker）<br/>
+功能3：超时检测（Timeout）<br/>
+功能4：缓存（Cache）<br/>
+功能5：降级（Fallback）<br/>
 　　Polly的策略主要由“故障”和“动作”两个部分组成，“故障”可以包括异常、超时等情况，“动作”则包括Fallback（降级）、重试（Retry）、熔断（Circuit-Breaker）等。策略则用来执行业务代码，当业务代码出现了“故障”中的情况时就开始执行“动作”。*
 
 **使用**
