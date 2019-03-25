@@ -24,3 +24,11 @@
     "Type": "RoundRobin"
 },
 ```
+!> Ocelot v13版本熔断参数DurationOfBreak 熔断的时间 单位为毫秒
+```
+"QoSOptions": {
+    "ExceptionsAllowedBeforeBreaking":3,
+    "DurationOfBreak":5000,
+    "TimeoutValue":5000
+}
+```
