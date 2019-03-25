@@ -10,7 +10,7 @@
   - [RSA加解密&签名](Csharp/RSAencryption)
   - [NuGet基本操作](Csharp/NuGet)
 - Other
-  - [MarkDown](Other/Consul/)
+  - [Consul](Other/Consul/)
   - [MarkDown](Other/Markdown)
   [^_^]:- [FTP连接](Other/FTPconnect)
   - [Git基本操作](Other/Git)
