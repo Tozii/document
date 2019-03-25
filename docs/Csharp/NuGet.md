@@ -1,4 +1,4 @@
-# Git基本操作
+# NuGet基本操作
 
 执行打包命令：`nuget spec` 会生成 project.nuspec 文件，该文件为NuGet描述文件，可以自行修改描述信息
 
