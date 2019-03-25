@@ -15,3 +15,12 @@
 
 **使用**
 > [.NET Core开源API网关 – Ocelot中文文档 —— 腾飞（Jesse）](https://www.cnblogs.com/jesse2013/p/net-core-apigateway-ocelot-docs.html)
+
+!> Ocelot v13版本的负载均衡的算法参数由LoadBalancer 键值对变成LoadBalancerOptions对象
+```
+"LoadBalancer": "RoundRobin"
+
+"LoadBalancerOptions": {
+    "Type": "RoundRobin"
+},
+```
