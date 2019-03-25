@@ -12,7 +12,6 @@
 - Other
   - [Consul](Other/Consul/)
   - [MarkDown](Other/Markdown)
-  [^_^]: [FTP连接](Other/FTPconnect)
   - [Git基本操作](Other/Git)
   - [Nginx](Other/Nginx)
   - [Docker](Other/Docker/)
