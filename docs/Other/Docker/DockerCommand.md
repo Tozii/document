@@ -116,3 +116,6 @@
 
 **十八、重启容器**
 `docker restart containerName`
+
+**十九、进入容器**
+`docker exec -it containerName bash`
