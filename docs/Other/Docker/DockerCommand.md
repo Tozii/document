@@ -118,4 +118,20 @@
 `docker restart containerName`
 
 **十九、进入容器**
+> Linux
+
 `docker exec -it containerName bash`
+
+> Windows
+
+`docker exec -it containerName cmd`
+
+**二十、容器与主机之间的数据拷贝**
+
+> 将主机./RS-MapReduce目录拷贝到容器30026605dcfe的/home/cloudera目录下。
+
+`docker cp RS-MapReduce 30026605dcfe:/home/cloudera`
+
+> 将容器30026605dcfe的/home/cloudera/RS-MapReduce目录拷贝到主机的/tmp目录中。
+
+`docker cp  30026605dcfe:/home/cloudera/RS-MapReduce /tmp/`
