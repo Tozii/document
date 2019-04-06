@@ -37,6 +37,8 @@
 **五、查看容器**
 `docker ps -a  // (列出所有容器，包括未运行的)`
 
+`docker ps -a -q  // (列出所有容器ID)`
+
 **六、删除镜像**
 `docker rmi imageName`
 
@@ -49,6 +51,8 @@
 
 **八、删除容器**
 `docker rm containerName`
+
+`docker rm $(docker ps -a -q)   //  删除所有容器`
 
 说明：
 
