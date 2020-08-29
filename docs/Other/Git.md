@@ -24,6 +24,8 @@
 
 添加忽略配置文件(git bash)：`touch .gitignore`
 
+检测当前文件状态 : `git status`
+
 创建文件夹(git bash)：`mkdir filename`
 
 添加忽略配置文件(cmd)：`type nul> .gitignore`

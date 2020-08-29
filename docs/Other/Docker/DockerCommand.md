@@ -9,7 +9,7 @@
 1、imageName：镜像名称
 
 **二、构建镜像（使用Dockerfile构建镜像）**
-`docker build -t imageName`
+`docker build -t imageName .`
 
 说明：
 
