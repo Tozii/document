@@ -1,6 +1,6 @@
 > 签名一（不清楚是否可以）
 
-```c#
+```csharp
 /// <summary>
 /// 签名
 /// </summary>
@@ -23,7 +23,7 @@ public string Sign(string str)
 ```
 > 签名二（项目中已使用）
 
-```c#
+```csharp
 /// <summary>
 /// 签名
 /// </summary>
@@ -41,7 +41,7 @@ public string Sign(string str)
 ```
 > 验签
 
-```c#
+```csharp
 /// <summary>
 /// 签名验证
 /// </summary>
