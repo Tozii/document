@@ -9,6 +9,10 @@
 - .Net
   - [RSA加解密&签名](Csharp/RSAencryption)
   - [NuGet基本操作](Csharp/NuGet)
+- 开发语言
+  - [Shell Script](language/shell)
+  - [PowerShell](language/powershell)
+  - [Python](language/python)
 - Other
   - [Consul](Other/Consul/)
   - [MarkDown](Other/Markdown)
