@@ -175,6 +175,33 @@ print("完成循环!")
 函数的第一行语句可以选择性地使用文档字符串—用于存放函数说明。<br/>
 函数内容以冒号起始，并且缩进。<br/>
 return [表达式] 结束函数，选择性地返回一个值给调用方。不带表达式的return相当于返回 None。<br/>
+
+> python 使用修饰器 `@staticmethod` 定义静态方法
+
+[python装饰器用法](https://www.jb51.net/article/168276.htm)
+
+```python
+class Dog(object):
+  def __init__(self,name):
+    self.name=name
+  def talk(self):
+    print("%s is talking"%self.name)
+  @staticmethod
+  def eat(self,food):##
+    print("%s is eating %s"%(self.name,food))
+ 
+  @staticmethod
+  def bulk(): ##如果不涉及实例变量的内容，可以不传self
+    print("wang wang!")
+ 
+d=Dog("haha")
+d.talk()
+Dog.eat(d,"baozi")
+d.eat(d,"mianbao")
+d.bulk()
+Dog.bulk()
+```
+
 ```python
 #!/usr/bin/python3
  
@@ -236,6 +263,8 @@ print ("相加后的值为 : ", sum( 20, 20 ))
 **类定义**
 
 类的方法与普通的函数只有一个特别的区别——它们必须有一个额外的第一个参数名称, 按照惯例它的名称是 self。
+
+> python 实例化类和其它大多数语言不通不需要关键字 **new**
 ```python
 #!/usr/bin/python3
  
@@ -252,13 +281,13 @@ x = MyClass()
 print("MyClass 类的属性 i 为：", x.i)
 print("MyClass 类的方法 f 输出为：", x.f())
 ```
-类有一个名为 __init__() 的特殊方法（构造方法），该方法在类实例化时会自动调用，像下面这样：
+类有一个名为 `__init__()` 的特殊方法（构造方法），该方法在类实例化时会自动调用，像下面这样：
 ```python
 def __init__(self):
     self.data = []
 ```
 
-当然， __init__() 方法可以有参数，参数通过 __init__() 传递到类的实例化操作上。例如:
+当然， `__init__()` 方法可以有参数，参数通过 `__init__()` 传递到类的实例化操作上。例如:
 ```python
 #!/usr/bin/python3
  
@@ -273,3 +302,44 @@ print(x.r, x.i)   # 输出结果：3.0 -4.5
 类属性与方法:<br/>
 __private_attrs：两个下划线开头，声明该属性为私有，不能在类的外部被使用或直接访问。在类内部的方法中使用时 self.__private_attrs。<br/>
 __private_method：两个下划线开头，声明该方法为私有方法，只能在类的内部调用 ，不能在类的外部调用。self.__private_methods。<br/>
+
+> python可以多继承 如：`class Complex(Base1,Base2):` 需要注意圆括号中父类的顺序，若是父类中有相同的方法名，而在子类使用时未指定，python从左至右搜索 即方法在子类中未找到时，从左到右查找父类中是否包含方法。
+
+**模块**
+
+模块是一个包含所有你定义的函数和变量的文件，其后缀名是.py。模块可以被别的程序引入，以使用该模块中的函数等功能,使用 `import` 关键字引入模块
+
+```python
+#!/usr/bin/python3
+# 文件名: using_sys.py
+ 
+import sys
+ 
+print('命令行参数如下:')
+for i in sys.argv:
+   print(i)
+ 
+print('\n\nPython 路径为：', sys.path, '\n')
+```
+
+定义support.py 文件代码
+```python
+#!/usr/bin/python3
+# Filename: support.py
+ 
+def print_func( par ):
+    print ("Hello : ", par)
+    return
+```
+
+test.py 引入 support 模块：
+```python
+#!/usr/bin/python3
+# Filename: test.py
+ 
+# 导入模块
+import support
+ 
+# 现在可以调用模块里包含的函数了
+support.print_func("Runoob")
+```
