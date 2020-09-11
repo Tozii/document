@@ -13,6 +13,7 @@
   - [Shell Script](language/shell/)
   - [PowerShell](language/powershell/)
   - [Python](language/python/)
+  - [Go](language/go/)
 - Other
   - [Consul](Other/Consul/)
   - [MarkDown](Other/Markdown)
