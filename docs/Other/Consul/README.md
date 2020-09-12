@@ -17,3 +17,71 @@
 
 **使用**
 > [.NET Core微服务实施之Consul服务发现与治理 — dotnetgeek](https://www.cnblogs.com/waynechan/p/9354909.html)
+
+[官方操作文档](https://www.consul.io/commands)
+
+windows：下载consul压缩包到本地，然后解压进入consul.exe文件所在目录，打开命令行使用 `consul` 或 `consul -h` 命令可以查看consul所有操作命令。<br/>
+使用 `consul [command] -h` 可以查看指定命令帮助，如： `consul agent -h` 查看agent详细命令
+
+使用 `consul catalog nodes` 命令列出所有已知节点
+
+列出提供服务名称“web”的节点 `consul catalog nodes -service=web`
+
+**consult快照**
+
+命令： `consul snapshot [command]`
+
+该snapshot命令具有用于保存，还原和检查Consul服务器状态以进行灾难恢复的子命令。这些是原子的时间点快照，其中包括键/值条目，服务目录，准备好的查询，会话和ACL
+
+停止代理 `consul leave`
+
+如：`consul snapshot save backup.snap` 创建快照并命名为backup.snap
+
+`consul snapshot restore backup.snap` 恢复指定快照
+
+`consul snapshot agent [可选参数]` 命令启动一个守护进程，更加参数可以长时间运行并更加参数定时保存快照
+
+快照选项
+
+`-interval`-以单位后缀作为时间执行快照的时间间隔，可以是“ s”，“ m”，“ h”，表示秒，分钟或小时。如果提供0，则代理将创建单个快照，然后退出，这对于通过批处理作业运行快照很有用。默认为“ 1h”
+
+`-retain`-要保留的快照数量。拍摄每个快照后，最早的快照将开始删除，以便最多保留这么多快照。如果将其设置为0，则代理将不会执行此操作，快照将永远累积。默认为30。
+
+例子
+
+不带任何参数运行代理将运行一个长时间运行的守护进程，该进程将执行领导者选举以进行高可用性操作，通过运行状况检查向Consul服务发现进行注册，每小时进行一次快照，保留最后30个快照，并将快照保存到当前工作目录：
+
+`consul snapshot agent`
+
+[官方入门教程](https://learn.hashicorp.com/tutorials/consul/get-started-agent)
+
+在生产中，您将以服务器或客户端模式运行每个Consul代理。每个Consul数据中心必须至少具有一个服务器，该服务器负责维护Consul的状态。这包括有关其他Consul服务器和客户端，可用于发现的服务以及允许哪些服务与哪些其他服务进行通信的信息。
+
+非服务器代理以客户端模式运行。客户端是注册服务，运行状况检查并将查询转发到服务器的轻量级进程。客户端必须在Consul数据中心中运行服务的每个节点上运行，因为客户端是有关服务运行状况的真实来源。
+
+!> 开发模式启动consul代理 `-dev` 生产模式勿用
+`consul agent -dev
+
+Consul使用您的主机名作为默认节点名。如果您的主机名包含句点，则对该节点的DNS查询将不适用于Consul。为避免这种情况，请使用-node标志显式设置节点的名称。`
+
+`consul agent -dev -node [主机名]`
+
+查询数据中心成员
+`consul members` 或 `consul members -detailed` 查询更多
+
+**启动代理参数**
+
+- `-config-file` 要加载的配置文件
+- `-config-dir` 要加载的配置文件目录
+- `-data-dir` 此标志为代理提供了一个用于存储状态的数据目录。这是所有代理程序所必需的。该目录在重新引导后应是持久的。这对于在服务器模式下运行的代理来说尤其重要，因为它们必须能够保持群集状态
+- `-dev` 启用开发服务器模式
+- `-http-port` 监听的HTTP API端口。这将覆盖默认端口8500
+- `-https-port` 用于侦听的HTTPS API端口
+- `-log-file` 将所有Consul代理日志消息写入文件。该值用作日志文件名的前缀。当前时间戳将附加到文件名。如果该值以路径分隔符结尾，consul- 则将应用于该值。如果文件名缺少扩展名，.log 则会附加。例如，设置log-file为/var/log/会导致日志文件路径为/var/log/consul-{timestamp}.log。log-file可以-log-rotate-bytes与-log-rotate-duration结合使用 ， 以获得细粒度的日志轮换体验。
+- `-join` 启动时要加入的另一个代理的地址
+- `-node` 集群中此节点的名称
+- `-server` 此标志用于控制代理是处于服务器还是客户端模式。提供后，代理将充当Consul服务器。每个Consul群集必须至少具有一台服务器，并且每个数据中心最好不超过5台。所有服务器都参与Raft共识算法，以确保事务以一致的，可线性化的方式发生。事务会修改群集状态，群集状态将在所有服务器节点上维护，以确保在节点出现故障时可用。服务器节点还与其他数据中心中的服务器节点一起参与WAN闲话池。服务器充当其他数据中心的网关，并根据需要转发流量。
+
+> 在多代理Consul数据中心中，每个服务都将向其本地Consul客户端注册，并且客户端会将注册转发给Consul服务器，该服务器维护服务目录。（此处consul服务器为使用`-server`参数启动的代理）
+
+> Consul是一个分布式应用程序，旨在使每台计算机具有一个代理。要在同一台计算机上运行两个代理，您需要安装 VirtualBox和 Vagrant，它们将运行虚拟机以模拟分布式环境。
