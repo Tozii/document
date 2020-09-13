@@ -119,3 +119,4 @@ D:\consul>consul catalog nodes
 consul1
 consul2
 ```
+> consul 多个数据中心数据不会同步，所有在部署consul集群时每个数据中心至少部署3-5个consul服务器，consul客户端不限数量，多个consul服务器用于数据保存，在leader节点发生故障时不影响服务正常运行
