@@ -2,9 +2,9 @@
 - 开发工具
   - [Consul](Other/Consul/)
   - [Ocelot](Tools/Ocelot/)
-  - [Nginx](Other/Nginx)
+  - [Nginx](Other/Nginx/)
   - [Polly](Tools/Polly/)
-  - [Jenkins](tools/jenkins)
+  - [Jenkins](Tools/jenkins/)
   - [UrlFirewall](Tools/UrlFirewall/)
   - [BouncyCastle.Crypto](Tools/BouncyCastle/)
   - [SignalR](Tools/SignalR/)
