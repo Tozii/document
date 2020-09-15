@@ -4,19 +4,19 @@ Python 是一种解释型、面向对象、动态数据类型的高级程序设�
 
 **数字类型**
 
-int (整数), 如 1, 只有一种整数类型 int，表示为长整型，没有 python2 中的 Long。<br/>
-bool (布尔), 如 True。<br/>
-float (浮点数), 如 1.23、3E-2<br/>
-complex (复数), 如 1 + 2j、 1.1 + 2.2j<br/>
+- int (整数), 如 1, 只有一种整数类型 int，表示为长整型，没有 python2 中的 Long。<br/>
+- bool (布尔), 如 True。<br/>
+- float (浮点数), 如 1.23、3E-2<br/>
+- complex (复数), 如 1 + 2j、 1.1 + 2.2j<br/>
 
 **标准数据类型**
 
-Number（数字）<br/>
-String（字符串）<br/>
-List（列表）<br/>
-Tuple（元组）<br/>
-Set（集合）<br/>
-Dictionary（字典）<br/>
+- Number（数字）<br/>
+- String（字符串）<br/>
+- List（列表）<br/>
+- Tuple（元组）<br/>
+- Set（集合）<br/>
+- Dictionary（字典）<br/>
 
 Python中的字符串用单引号 ' 或双引号 " 括起来，同时使用反斜杠 \ 转义特殊字符。<br/>
 列表是写在方括号 [] 之间、用逗号分隔开的元素列表。<br/>

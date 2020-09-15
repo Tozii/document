@@ -16,7 +16,7 @@
   - [Spring](java/spring/)
   - [SpringBoot](java/springboot/)
   - [Lombok](java/lombok/)
-  - [Spring读取配置](java/readconfig/)
+  - [Spring读取配置](java/springboot/readconfig.md)
 - 开发语言
   - [Shell Script](language/shell/)
   - [PowerShell](language/powershell/)
