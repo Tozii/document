@@ -2,6 +2,7 @@
 - 开发工具
   - [Consul](Other/Consul/)
   - [Ocelot](Tools/Ocelot/)
+  - [Kafka](Tools/kafka/)
   - [Nginx](Other/Nginx/)
   - [Polly](Tools/Polly/)
   - [Jenkins](Tools/jenkins/)

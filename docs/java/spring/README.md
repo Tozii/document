@@ -85,8 +85,10 @@ public class AppConfig {
 - @Service : 对应服务层，主要涉及一些复杂的逻辑，需要用到 Dao层。
 - @Controller : 对应 Spring MVC 控制层，主要用于接受用户请求并调用 Service 层返回数据给前端页面。
 
-## java过滤器和拦截器
+## Spring 常用方法
 [SpringBoot 实现过滤器](https://github.com/Snailclimb/springboot-guide/blob/master/docs/basis/springboot-filter.md)   
 [SpringBoot 实现拦截器](https://github.com/Snailclimb/springboot-guide/blob/master/docs/basis/springboot-interceptor.md)   
 [SpringBoot 异步编程](https://github.com/Snailclimb/springboot-guide/blob/master/docs/advanced/springboot-async.md)
 [5种常见Bean映射工具的性能比对](https://github.com/Snailclimb/springboot-guide/blob/master/docs/advanced/Performance-of-Java-Mapping-Frameworks.md)
+[使用Spring Boot+Dubbo 搭建一个分布式服务](https://github.com/Snailclimb/springboot-guide/blob/master/docs/advanced/springboot-dubbo.md)
+[Spring常用注解](https://github.com/Snailclimb/JavaGuide/blob/master/docs/system-design/framework/spring/spring-annotations.md)
