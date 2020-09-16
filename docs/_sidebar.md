@@ -11,6 +11,7 @@
   - [SignalR](Tools/SignalR/)
   - [SuperSocket](Tools/SuperSocket/)
 - .Net
+  - [Autofac.Annotation](Csharp/autofacannotation/)
   - [RSA加解密&签名](Csharp/RSAencryption)
   - [NuGet基本操作](Csharp/NuGet)
 - Java
@@ -18,6 +19,7 @@
   - [SpringBoot](java/springboot/)
   - [Lombok](java/lombok/)
   - [Spring读取配置](java/springboot/readconfig.md)
+  - [Dubbo](java/dubbo/)
 - 开发语言
   - [Shell Script](language/shell/)
   - [PowerShell](language/powershell/)
