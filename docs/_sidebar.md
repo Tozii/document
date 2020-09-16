@@ -3,7 +3,7 @@
   - [Consul](Other/Consul/)
   - [Ocelot](Tools/Ocelot/)
   - [Kafka](Tools/kafka/)
-  - [Nginx](Other/Nginx/)
+  - [Nginx](Other/Nginx)
   - [Polly](Tools/Polly/)
   - [Jenkins](Tools/jenkins/)
   - [UrlFirewall](Tools/UrlFirewall/)
@@ -11,7 +11,7 @@
   - [SignalR](Tools/SignalR/)
   - [SuperSocket](Tools/SuperSocket/)
 - .Net
-  - [Autofac.Annotation](Csharp/autofacannotation/)
+  - [Autofac.Annotation](Csharp/autofacannotation)
   - [RSA加解密&签名](Csharp/RSAencryption)
   - [NuGet基本操作](Csharp/NuGet)
 - Java
