@@ -12,6 +12,7 @@
   - [SuperSocket](Tools/SuperSocket/)
 - .Net
   - [Autofac.Annotation](Csharp/autofacannotation)
+  - [FreeSql](Csharp/freesql)
   - [RSA加解密&签名](Csharp/RSAencryption)
   - [NuGet基本操作](Csharp/NuGet)
 - Java
