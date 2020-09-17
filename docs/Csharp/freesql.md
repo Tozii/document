@@ -98,4 +98,4 @@ fsql.Delete<Blog>()
 | DataType.PostgreSQL	| Host=192.168.164.10;Port=5432;Username=postgres;Password=123456; Database=tedb;Pooling=true;Minimum Pool Size=1| 
 | DataType.SqlServer	| Data Source=.;Integrated Security=True;Initial Catalog=freesqlTest;Pooling=true;Min Pool Size=1| 
 | DataType.Oracle	| user id=user1;password=123456; data source=//127.0.0.1:1521/XE;Pooling=true;Min Pool Size=1| 
-| DataType.Sqlite	| Data Source=||DataDirectory||\document.db; Attachs=xxxtb.db; Pooling=true;Min Pool Size=1 | 
+| DataType.Sqlite	| Data Source=&#124;DataDirectory&#124;\document.db; Attachs=xxxtb.db; Pooling=true;Min Pool Size=1 | 
