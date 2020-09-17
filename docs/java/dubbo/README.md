@@ -23,7 +23,8 @@ Dubbo支持多种注册中心：
 ## 系统架构
 ---
 
-![dubbo](http://dubbo.apache.org/img/architecture.png)
+<!--![dubbo](http://dubbo.apache.org/img/architecture.png)-->
+<img src="http://dubbo.apache.org/img/architecture.png" width="530" height="412" alt="dubbo" align=center />
 
 ### Dubbo 系统分为5个部分：
 - 远程服务运行容器(Container)
