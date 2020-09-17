@@ -84,7 +84,7 @@ fsql.Delete<Blog>()
 | UseConnectionFactory	| this	| 设置自定义数据库连接对象（放弃内置对象连接池技术）| 
 | UseAutoSyncStructure	| this	| 【开发环境必备】自动同步实体结构到数据库，程序运行中检查实体创建或修改表结构| 
 | UseNoneCommandParameter	| this	| 不使用命令参数化执行，针对 Insert/Update，也可临时使用 IInsert/IUpdate.NoneParameter()| 
-| UseGenerateCommandParameterWithLambda	this	| 生成命令参数化执行，针对 lambda 表达式解析| 
+| UseGenerateCommandParameterWithLambda	| this	| 生成命令参数化执行，针对 lambda 表达式解析| 
 | UseLazyLoading	| this	| 开启延时加载功能| 
 | UseMonitorCommand	| this	| 监视全局 SQL 执行前后| 
 | UseNameConvert	| this	| 自动转换名称 Entity -> Db| 
@@ -98,4 +98,4 @@ fsql.Delete<Blog>()
 | DataType.PostgreSQL	| Host=192.168.164.10;Port=5432;Username=postgres;Password=123456; Database=tedb;Pooling=true;Minimum Pool Size=1| 
 | DataType.SqlServer	| Data Source=.;Integrated Security=True;Initial Catalog=freesqlTest;Pooling=true;Min Pool Size=1| 
 | DataType.Oracle	| user id=user1;password=123456; data source=//127.0.0.1:1521/XE;Pooling=true;Min Pool Size=1| 
-| DataType.Sqlite	| Data Source=|DataDirectory|\document.db; Attachs=xxxtb.db; Pooling=true;Min Pool Size=1| 
+| DataType.Sqlite	| Data Source=|DataDirectory|\document.db; Attachs=xxxtb.db; Pooling=true;Min Pool Size=1 | 
