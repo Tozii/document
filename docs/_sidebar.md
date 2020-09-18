@@ -3,6 +3,7 @@
   - [Consul](Other/Consul/)
   - [Ocelot](Tools/Ocelot/)
   - [Kafka](Tools/kafka/)
+  - [RabbitMQ](Tools/rabbitmq)
   - [Nginx](Other/Nginx)
   - [Polly](Tools/Polly/)
   - [Jenkins](Tools/jenkins/)
