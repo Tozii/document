@@ -147,3 +147,5 @@ builder = builder.And(a => a.Name == parame.Name);
 builder = builder.And(a => a.Age == parame.Age);
 var list = students.AsQueryable().Where(builder).ToList();
 ```
+
+[再看ExpressionTree，Emit，反射创建对象性能对比](https://www.cnblogs.com/7tiny/p/9861166.html)
