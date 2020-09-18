@@ -28,6 +28,7 @@ C#中的Expression类就是表达式类，其中表达式的节点共有85种，
 ### 表达式树创建
 
 1.使用Lambda表达式创建:`Expression<TDelegate>`类型，该类型继承自`LambdaExpression`,用于将强类型 lambda 表达式表示为数据结构
+
 如：`Expression<Func<int,int,bool>> fun = (x,y) => x<y`
 
 这种方法创建除的表达式根节点类型为`ExpressionType.Lambda`
@@ -57,12 +58,12 @@ public TDelegate Compile();
 
 2.组装法
 ```csharp
-ParameterExpression p1=Expression.Parameter(typeof(int),"x");
+ParameterExpression p1 = Expression.Parameter(typeof(int),"x");
 ParameterExpression p2 = Expression.Parameter(typeof(int),"y");
 BinaryExpression bexpr = Expression.GreaterThan(p1, p2);
-
-`BinaryExpression`类型表示包含二元运算符的表达式。
 ```
+`BinaryExpression`类型表示包含二元运算符的表达式。
+
 `Expression`类型部分静态方法：
 ```csharp
 //
@@ -91,7 +92,7 @@ public static BinaryExpression GreaterThan(Expression left, Expression right);
 //     仅用于调试或打印目的的参数或变量的名称。
 public static ParameterExpression Parameter(Type type, string name);
 ```
-由以上参考可知该组装法最终生成而已表达式 `x > y`
+由以上参考可知该组装法最终生成表达式 `x > y`
 
 ### 表达式的运行
 
