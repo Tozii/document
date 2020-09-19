@@ -4,7 +4,7 @@
 
 **nginx配置关系图**
 
-![图片来自https://blog.csdn.net/qq_29677867/article/details/90112472](https://tozii.github.io/Asset/document/images/nginxconfig.png)
+![图片来自https://blog.csdn.net/qq_29677867/article/details/90112472](../static/img/nginxconfig.png)
 
 [配置文档解读来自博客园biglittleant](https://www.cnblogs.com/biglittleant/p/8979852.html)
 
