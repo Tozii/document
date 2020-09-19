@@ -90,3 +90,10 @@
 修改仓库名：`git remote rename origin oschina`
 
 关联远程分支：`git push --set-upstream origin master` 这样以后就可以使用`git push` `git pull`，默认推送和拉取`origin`远程仓库的`master`分支 
+
+### 在未获取远程更新情况下，推送本地分支更改到远程分支报错（non-fast-forward）
+1. `git fetch [originname] [branchname]` 获取远程指定分支修改
+2. `git merge [originname] [branchname]` 合并远程分支
+3. `git pull [originname] [branchname]` 更新本地分支
+
+上面三步完成后，解决本地`[branchname]`分支冲突，然后提交就可以了
