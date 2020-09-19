@@ -88,4 +88,4 @@ TypeAdapterConfig<MyEntity, MyDto>
            .Map(s => s.UoyoName, d => d.UoyoCSharp.Name);
 ```
 
-更加官方提供的性能测试对比，性能优于AutoMapper
+据官方提供的性能测试对比，性能优于AutoMapper
