@@ -25,6 +25,7 @@
   - [Lombok](java/lombok/)
   - [Spring读取配置](java/springboot/readconfig.md)
   - [Dubbo](java/dubbo/)
+  - [Mycat](java/mycat/)
 - 开发语言
   - [Shell Script](language/shell/)
   - [PowerShell](language/powershell/)
