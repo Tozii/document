@@ -4,7 +4,7 @@
 
 变量名前加$ `$name="powershell"`
 
-**函数**
+## 函数
 
 无参定义
 ```powershell
@@ -73,7 +73,7 @@ function sayHello{
 `Set-Service` 启动、停止和挂起服务并更改服务的属性<br/>
 `Set-Content` 在项中写入内容或用新内容替换其中的内容<br/>
 
-**流程控制**
+## 流程控制
 
 foreach的用法
 ```powershell
