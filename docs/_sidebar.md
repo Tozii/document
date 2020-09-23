@@ -5,14 +5,15 @@
   - [RabbitMQ](Tools/rabbitmq)
   - [Nginx](Other/Nginx)
   - [Jenkins](Tools/jenkins/)
+  - [ElasticSearch](Tools/elasticsearch/)
   - [UrlFirewall](Tools/UrlFirewall/)
-  - [BouncyCastle.Crypto](Tools/BouncyCastle/)
   - [MarkDown](Other/Markdown)
   - [Git基本操作](Other/Git)
   - [Docker](Other/Docker/)
-  - [通过IP获取位置](Other/GetAddressByIP)
   - [Gitea](Other/Gitea)
-  - [Diff](Other/Diff)
+  - [BouncyCastle.Crypto](Tools/BouncyCastle/)
+  <!-- - [通过IP获取位置](Other/GetAddressByIP) -->
+  <!-- - [Diff](Other/Diff) -->
 - .Net
   - [Ocelot](Tools/Ocelot/)
   - [Autofac.Annotation](Csharp/autofacannotation)
