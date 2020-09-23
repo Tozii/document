@@ -37,7 +37,8 @@
   - [PowerShell](language/powershell/)
   - [Python](language/python/)
   - [Go](language/go/)
-  
+  - [TypeScript](language/typescript/)
+
 <!-- - Other
   - [MarkDown](Other/Markdown)
   - [Git基本操作](Other/Git)
