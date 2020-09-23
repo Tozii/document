@@ -33,6 +33,7 @@
   - [Spring读取配置](java/springboot/readconfig.md)
   - [Dubbo](java/dubbo/)
   - [Mycat](java/mycat/)
+  - [MyBatis](java/mybatis/)
 - 开发语言
   - [Shell Script](language/shell/)
   - [PowerShell](language/powershell/)
