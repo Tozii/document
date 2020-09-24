@@ -32,7 +32,8 @@
 
 创建文件夹(cmd)：`mkdir filename` 或 `md filename`
 
-撤销全部未提交更改（使用暂存区文件替换工作区文件）：`git checkout .`
+撤销全部未提交更改（使用暂存区文件替换工作区文件）：`git checkout .`   
+当执行 git checkout HEAD . 或者 git checkout HEAD <file> 命令时，会用 HEAD 指向的 master 分支中的全部或者部分文件替换暂存区和以及工作区中的文件。这个命令也是极具危险性的，因为不但会清除工作区中未提交的改动，也会清除暂存区中未提交的改动。
 
 添加本地所有更改到暂存区：`git add -A`
 
@@ -44,7 +45,7 @@
 
 推送到远程仓库：`git push [remotename][branchname]`例：`git push origin master`
 
-版本差异比较：`git diff head -- [filename]`
+版本差异比较(暂存区和工作区的差异)：`git diff head -- [filename]`
 例子：假设仓库里已提交的有五个版本，依次提交的是A、B、C、D、E 。
 执行 `git diff <filename>` 命令，命令行窗口不会输出文件的改动信息。
 
@@ -77,7 +78,8 @@
 
 查看历史：`git log` 退出使用英文 `q`
 
-回退上一个版本(撤销暂存区修改)：`git reset --hard HEAD^`
+回退上一个版本(撤销暂存区修改)：`git reset --hard HEAD^`   
+当执行 git reset HEAD 命令时，暂存区的目录树会被重写，被 master 分支指向的目录树所替换，但是工作区不受影响。
 
 查看操作记录：`git reflog`
 
