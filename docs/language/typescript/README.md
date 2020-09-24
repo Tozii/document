@@ -71,6 +71,18 @@ TypeScript 是一种给 JavaScript 添加特性的语言扩展。增加的功能
         alert("Hello Runoob");
     }
 ```
+- 枚举	enum 枚举类型用于定义数值集合。
+```ts
+    enum Color {Red, Green, Blue};
+    let c: Color = Color.Blue;
+    console.log(c);    // 输出 2
+```
+- void	void 用于标识方法返回值的类型，表示该方法没有返回值。
+```ts
+    function hello(): void {
+        alert("Hello Runoob");
+    }
+```
 - null	null	表示对象值缺失。
 - undefined	undefined	用于初始化变量为一个未定义的值
 - never	never	never 是其它类型（包括 null 和 undefined）的子类型，代表从不会出现的值。
