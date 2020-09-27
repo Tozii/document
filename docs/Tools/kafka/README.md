@@ -100,3 +100,7 @@ Kafka 中发送 1 条消息的时候，可以指定 topic, partition, key,data�
 
 
 [RocketMQ介绍文章](https://github.com/Snailclimb/JavaGuide/blob/master/docs/system-design/data-communication/RocketMQ.md)
+
+#### 使用
+
+[客户端开源地址](https://github.com/confluentinc/confluent-kafka-dotnet)

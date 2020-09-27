@@ -42,3 +42,7 @@ RabbitMQ 中通过 Binding(绑定) 将 Exchange(交换器) 与 Queue(消息队�
     - BindingKey 中可以存在两种特殊字符串“&#42;”和“#”，用于做模糊匹配，其中“&#42;”用于匹配一个单词，“#”用于匹配多个单词(可以是零个)。
 - headers 类型的交换器不依赖于路由键的匹配规则来路由消息，而是根据发送的消息内容中的 headers 属性进行匹配。在绑定队列和交换器时制定一组键值对，当发送消息到交换器时，RabbitMQ会获取到该消息的 headers（也是一个键值对的形式)'对比其中的键值对是否完全匹配队列和交换器绑定时指定的键值对，如果完全匹配则消息会路由到该队列，否则不会路由到该队列。headers 类型的交换器性能会很差，而且也不实用，基本上不会看到它的存在。
      
+#### 使用
+
+[官方开源客户端地址](https://github.com/rabbitmq/rabbitmq-dotnet-client)   
+[第三方开源客户端地址](https://github.com/EasyNetQ/EasyNetQ)
