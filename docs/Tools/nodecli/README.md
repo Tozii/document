@@ -64,6 +64,6 @@ require('yargs') // eslint-disable-line
 
 ### 全局安装测试
 
-- 在项目目录下使用`npm link`命令，该命令会在node_module全局配置路径文件加下创建一个快捷方式，并生成bash、cmd、powershell三种格式的命令脚本
+- 在项目目录下使用`npm link`命令，该命令会在node_module全局配置路径文件加下创建一个快捷方式，将整个项目复制到全局目录
 - 将node_module全局配置路径加入环境变量，如果已经加入则可忽略(这步主要是可以在任何地方打开命令行窗口都可以使用`democil`命令)
 - 卸载全局测试快捷方式`npm unlink`
