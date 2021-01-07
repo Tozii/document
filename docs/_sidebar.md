@@ -13,6 +13,7 @@
   - [Gitea](Other/Gitea)
   - [BouncyCastle.Crypto](Tools/BouncyCastle/)
   - [Nodecli](/Tools/nodecli/)
+  - [Raft算法]
   <!-- - [通过IP获取位置](Other/GetAddressByIP) -->
   <!-- - [Diff](Other/Diff) -->
 - .Net

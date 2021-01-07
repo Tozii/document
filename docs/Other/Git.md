@@ -1,6 +1,6 @@
 # Git基本操作
 
---2020-12-24 更新
+2020-12-24 更新
 
 参考：https://www.cnblogs.com/tinywan/p/12344267.html
 
