@@ -23,3 +23,5 @@ server继承main，location继承server，upstream即不会继承其他设置也
 ### haproxy和keepalived
 
 https://www.cnblogs.com/zs-wei/p/9213961.html
+
+https://blog.csdn.net/qq_41772936/article/details/80718014
