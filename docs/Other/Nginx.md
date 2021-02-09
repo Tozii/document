@@ -19,3 +19,7 @@ location（URL匹配特点位置的设置）
 server部分的指令主要用于指定主机和端口，upstream指令主要用于负载均衡和设置一系列的后端服务器，location部分用于匹配网页位置位置。
 关系如下：
 server继承main，location继承server，upstream即不会继承其他设置也不会被继承。
+
+### haproxy和keepalived
+
+https://www.cnblogs.com/zs-wei/p/9213961.html
