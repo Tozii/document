@@ -3,7 +3,7 @@
   - [Consul](Other/Consul/)
   - [Kafka](Tools/kafka/)
   - [RabbitMQ](Tools/rabbitmq)
-  - [Nginx](Other/Nginx)
+  - [Nginx&HA](Other/Nginx)
   - [Jenkins](Tools/jenkins/)
   - [ElasticSearch](Tools/elasticsearch/)
   - [UrlFirewall](Tools/UrlFirewall/)
@@ -21,7 +21,7 @@
   - [Autofac.Annotation](Csharp/autofacannotation)
   - [FreeSql](Csharp/freesql)
   - [Expression](Csharp/expression)
-  - [Owin](Csharp/owin)
+  - [Owin](Csharp/owin)ls
   - [SignalR](Tools/SignalR/)
   - [SuperSocket](Tools/SuperSocket/)
   - [Polly](Tools/Polly/)
