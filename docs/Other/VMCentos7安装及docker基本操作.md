@@ -4,14 +4,14 @@
 
 - 配置文件路径 `/etc/sysconfig/network-scripts` 文件名 `ifcfg-ens33`
 - 修改配置 `ONBOOT=yes`
-![图片](../img/1624518894366_8CE1F618-A81D-414e-B7FE-630627573609.png)
+![图片](../static/img/1624518894366_8CE1F618-A81D-414e-B7FE-630627573609.png)
 - 重启网络 `systemctl restart network`
 - 安装ifconfig  
   1. 先搜索`yum search ifconfig` (这个操作只是为了查询yum源中有没有可用的工具，可以直接操作步骤2)
   2. 安装`yum install net-tools.x86_64`
-![图片](../img/8D31A168-C7B5-4f3a-AAD2-8FED86F7C740.png)
+![图片](../static/img/8D31A168-C7B5-4f3a-AAD2-8FED86F7C740.png)
 - 查看虚拟机ip地址 `ifconfig`
-![图片](../img/22A5AE72-E646-490b-81D6-A5FDDE13D688.png)
+![图片](../static/img/22A5AE72-E646-490b-81D6-A5FDDE13D688.png)
 
 ### linux基本操作
 
@@ -33,26 +33,26 @@
     - `-f` 参数可以动态监控文件变化`tail -f test.txt`
 - 编辑文件 `vi/vim`
   - 编辑文件test.txt `vim test.txt` 执行命令后默认为命令模式
-  ![图片](../img/81FB5ECD-6B70-48e2-9C7F-8546F4F235BD.png)
+  ![图片](../static/img/81FB5ECD-6B70-48e2-9C7F-8546F4F235BD.png)
   - 按 `i` 键进入输入模式,可以进行编辑
-  ![图片](../img/A0199696-CEF1-4800-B5D0-D33966854043.png)
+  ![图片](../static/img/A0199696-CEF1-4800-B5D0-D33966854043.png)
   - 编辑完成后按 `esc` 键进入底线命令模式,输入：`:wq` 按回车，保存并退出
-  ![图片](../img/4AB84F9B-4798-4107-8D59-C40C83A363F8.png)
+  ![图片](../static/img/4AB84F9B-4798-4107-8D59-C40C83A363F8.png)
 - 创建目录 `mkdir`
   - `-p` 参数支持创建多层目录
 - 创建文件 `touch`
 - 列出当前目录文件 `ls`
   - 列出详情信息 `ls -l` 或者使用别名 `ll`
-  ![图片](../img/C153B909-1277-4f49-80E1-D997DB25781F.png)
+  ![图片](../static/img/C153B909-1277-4f49-80E1-D997DB25781F.png)
 - 查看当前登录可以使用的所有别名 `alias`
 - 系统状态命令 `systemctl`
   - 如：查看防火墙状态 `systemctl status firewalld`
-  ![图片](../img/1C782A4F-A741-4604-ABD2-B57F0D4A9CF9.png)
+  ![图片](../static/img/1C782A4F-A741-4604-ABD2-B57F0D4A9CF9.png)
   - 关闭`systemctl stop firewalld` 开启`systemctl start firewalld`
   - 开机启动`systemctl enable firewalld`
   - 取消开机启动`systemctl disable firewalld`
 - 查找命令 `find`
-![图片](../img/1624522407018_1680408E-4C14-4cc1-B5AA-39CFE9399166.png)
+![图片](../static/img/1624522407018_1680408E-4C14-4cc1-B5AA-39CFE9399166.png)
 - 修改权限 `chmod`
   - 修改test.txt文件读写执行权限 `chmod 700 test.txt`
   - 修改test目录及其子目录及文件权限 `chmod 700 -R ./test`
