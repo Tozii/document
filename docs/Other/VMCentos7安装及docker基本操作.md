@@ -105,4 +105,7 @@ docker exec -it containerName /bin/bash
 docker cp /www/runoob 96f7f14e99ab:/www/
 将容器96f7f14e99ab的/www目录拷贝到主机的/tmp目录中
 docker cp 96f7f14e99ab:/www /tmp/
+
+# 解决镜像创建nuget还原时https请求地址问题：
+docker build -t net5test -f Dockerfile . --network=host
 ```
